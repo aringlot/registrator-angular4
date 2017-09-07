@@ -1,0 +1,9 @@
+<p>
+  Name that was changed: {{changedName}}
+</p>
+<div>
+  <app-container-item [item]="item"
+                      (onChangeName)="changeName($event)"
+                      *ngFor="let item of items">
+  </app-container-item>
+</div>
